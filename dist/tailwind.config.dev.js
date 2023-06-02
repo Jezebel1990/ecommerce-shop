@@ -1,34 +1,33 @@
+"use strict";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Poppins',
+      primary: 'Poppins'
     },
     container: {
       padding: {
         DEFAULT: '30px',
-        lg: '0',
-      },
+        lg: '0'
+      }
     },
     screens: {
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      xl: '1440px',
+      xl: '1440px'
     },
     extend: {
       colors: {
         primary: '#222222',
-        secondary: '#2596be',
+        secondary: '#2596be'
       },
       backgroundImage: {
-        hero: "url('./img/bg_hero.svg')",
-      },
-    },
+        hero: "url('./img/bg_hero.svg')"
+      }
+    }
   },
-  plugins: [],
-}
-
+  plugins: []
+};

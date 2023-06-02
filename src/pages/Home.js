@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 
 import { ProductContext } from '../contexts/ProductContext';
 import Product from '../componentes/Product';
+import Hero from '../componentes/Hero';
 
 const  Home = () => {
 
@@ -17,8 +18,8 @@ const  Home = () => {
   console.log(filteredProducts);
 
   return (
-  
   <div>
+    <Hero />
     <section className='py-16'>
   <div className="container mx-auto">
     <div className='grid grid-cols-1 md:grid-cols-2 

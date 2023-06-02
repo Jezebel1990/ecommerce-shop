@@ -24,7 +24,7 @@ useEffect(()=> {
 return (
  <header 
  className={`${
-    isActive ? 'bg-orange-400 py-4 shadow-md' : 'bg-blue-400 py-2'
+    isActive ? 'bg-blue-500 py-4 shadow-md' : 'bg-blue-400 py-2'
  } fixed w-full z-10 transition-all`}>
 <div className='container mx-auto flex items-center justify-between h-full'>
 

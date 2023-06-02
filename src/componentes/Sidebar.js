@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 
 import { IoMdArrowForward } from 'react-icons/io';
 import { FiTrash2 } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import { SidebarContext } from '../contexts/SidebarContext';
 import { CartContext } from '../contexts/CartContext';
@@ -27,7 +28,7 @@ const {cart, clearCart, total } = useContext(CartContext);
        <IoMdArrowForward className='text-2xl' />
       </div>
       </div>
-      <div className='flex flex-col gap-y-2 h-[520px] lg:h-[500px] overflow-y-auto overflow-x-hidden border-b'>
+      <div className='flex flex-col gap-y-2 h-[520px] lg:h-[440px] overflow-y-auto overflow-x-hidden border-b'>
         {cart.map((item) => {
          return <CartItem item={item} key={item.id} />;
         })}
@@ -47,6 +48,16 @@ const {cart, clearCart, total } = useContext(CartContext);
     <FiTrash2 />
    </div>
         </div>
+        <Link 
+          to='/'
+          className='bg-blue-200 flex p-4 justify-center
+          items-center text-primary w-full font-medium'
+          >Ver sacola</Link>
+        <Link 
+          to='/'
+          className='bg-primary flex p-4 justify-center
+          items-center text-white w-full font-medium'
+        >Confirir</Link>
         </div>
        </div>
   );

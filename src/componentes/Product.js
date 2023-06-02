@@ -43,7 +43,7 @@ group-hover:opacity-100 transition-all duration-300'>
  <div>
 <div className="text-sm capitalize text-gray-500">{category}</div>
 <Link to={`/product/${id}`}>
-  <h2 className='font-semibold mb-1'>{title}</h2>
+  <h2 className='font-medium mb-1'>{title}</h2>
 </Link>
 <div className='font-semibold'>R$ {price}</div>
 </div>

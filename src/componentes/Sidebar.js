@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 
-import { Link } from 'react-router-dom';
 import { IoMdArrowForward } from 'react-icons/io';
 import { FiTrash2 } from 'react-icons/fi';
 
@@ -19,41 +18,37 @@ const {cart, clearCart, total } = useContext(CartContext);
   } w-full bg-white fixed top-0 h-full
     shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all
     duration-300 z-20 px-4 lg:px-[35px]`}>
-      <div className= 'flex items-center justify-between py-6 border-b'>
+
+  <div className= 'flex items-center justify-between py-6 border-b'>
   <div className='uppercase text-sm font-semibold'>Sacola de compras (0)</div>
       <div 
       onClick={hanleClose}
-      className='cursor-pointer w-8 h-8 flex justify-center items-center'
-       >
+      className='cursor-pointer w-8 h-8 flex justify-center items-center'>
        <IoMdArrowForward className='text-2xl' />
       </div>
       </div>
-      <div className='flex flex-col gap-y-2 h-[520px]
-      lg:h-[640px] overflow-y-auto overflow-x-hidden border-b'
-      >
+      <div className='flex flex-col gap-y-2 h-[520px] lg:h-[500px] overflow-y-auto overflow-x-hidden border-b'>
         {cart.map((item) => {
          return <CartItem item={item} key={item.id} />;
         })}
       </div>
       <div className='flex flex-col gap-y-3 py-4 mt-4'>
-        <div className='flex w-full
-        justify-between items-center'
-        >
+      <div className='flex w-full justify-between items-center'>
 {/* total */}
-<div className='uppercase font-semibold'>
-  <span className='mr-2'>Total:</span>R$ {parseFloat
-  (total).toFixed(2)}
-  </div>
-{/* clear cart  */}
-<div onClick={clearCart}
-className='cursor-pointer py-4 bg-orange-600
-text-white w-12 h-12 flex justify-center items-center
-text-xl'>
-  <FiTrash2 />
-</div>
+        <div className='uppercase font-semibold'>
+        <span className='mr-2'>Total:</span>R$ {parseFloat(total).toFixed(2)}
+      </div>
+   {/* clear cart icon */}
+   <div 
+   onClick={clearCart}
+   className='cursor-pointer py-4 bg-orange-600
+   text-white w-12 h-12 flex justify-center
+   items-center text-xl'>
+    <FiTrash2 />
+   </div>
         </div>
-      </div>
-      </div>
+        </div>
+       </div>
   );
  };
       

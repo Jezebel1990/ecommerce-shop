@@ -9,7 +9,7 @@ import { CartContext } from '../contexts/CartContext';
 import CartItem from './CartItem';
 
  const Sidebar = () => {
- const { isOpen, hanleClose } = useContext(SidebarContext);
+ const { isOpen, handleClose } = useContext(SidebarContext);
 const {cart, clearCart, total, itemAmount } = useContext(CartContext);
 
   return (
@@ -23,7 +23,7 @@ const {cart, clearCart, total, itemAmount } = useContext(CartContext);
   <div className= 'flex items-center justify-between py-6 border-b'>
   <div className='uppercase text-sm font-semibold'>Sacola de compras ({itemAmount})</div>
       <div 
-      onClick={hanleClose}
+      onClick={handleClose}
       className='cursor-pointer w-8 h-8 flex justify-center items-center'>
        <IoMdArrowForward className='text-2xl' />
       </div>

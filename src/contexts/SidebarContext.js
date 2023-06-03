@@ -1,5 +1,4 @@
 import React, {useState, createContext} from 'react';
-import Sidebar from '../componentes/Sidebar';
 
 export const SidebarContext = createContext()
 

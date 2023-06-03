@@ -18,7 +18,6 @@ return (
   <div className='w-full h-full flex justify-center items-center'>
 <div className='w-[200] mx-auto flex
 justify-center items-center'>
-  
   <img className='max-h-[160px] group-hover:scale-150 transition duration-300' src={image} alt='' />
   </div>
 </div>
@@ -31,7 +30,6 @@ group-hover:opacity-100 transition-all duration-300'>
     <div className='flex justify-center items-center text-white w-12 h-12 bg-orange-600'>
   <BsBagPlusFill  className='text-3xl'/>
     </div>
-    
   </button>
 <Link
   to={`/product/${id}`}

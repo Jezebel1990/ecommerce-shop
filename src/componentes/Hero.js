@@ -17,12 +17,12 @@ Novidades
 </div>
 <h1 className='text-[70px] leading-[1.1] font-light mb-4'>
 LIQUIDAÇÃO <br/>
-<span className='font-semibold'>MODA FEMININA</span>
+<span className='font-semibold'>MODA OUTONO</span>
 </h1>
 <Link 
   to={'/'}
-  className='self-start uppercase font-semibold border-b-2
-  border-primary'
+  className='self-start uppercase font-semibold text-blue-800  border-b-2
+  border-blue-800'
 >
 Saiba mais
 </Link>

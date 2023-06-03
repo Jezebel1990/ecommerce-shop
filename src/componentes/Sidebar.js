@@ -10,7 +10,7 @@ import CartItem from './CartItem';
 
  const Sidebar = () => {
  const { isOpen, hanleClose } = useContext(SidebarContext);
-const {cart, clearCart, total } = useContext(CartContext);
+const {cart, clearCart, total, itemAmount } = useContext(CartContext);
 
   return (
     <div 
@@ -21,14 +21,14 @@ const {cart, clearCart, total } = useContext(CartContext);
     duration-300 z-20 px-4 lg:px-[35px]`}>
 
   <div className= 'flex items-center justify-between py-6 border-b'>
-  <div className='uppercase text-sm font-semibold'>Sacola de compras (0)</div>
+  <div className='uppercase text-sm font-semibold'>Sacola de compras ({itemAmount})</div>
       <div 
       onClick={hanleClose}
       className='cursor-pointer w-8 h-8 flex justify-center items-center'>
        <IoMdArrowForward className='text-2xl' />
       </div>
       </div>
-      <div className='flex flex-col gap-y-2 h-[520px] lg:h-[440px] overflow-y-auto overflow-x-hidden border-b'>
+      <div className='flex flex-col gap-y-2 h-[520px] lg:h-[400px] overflow-y-auto overflow-x-hidden border-b'>
         {cart.map((item) => {
          return <CartItem item={item} key={item.id} />;
         })}
@@ -51,13 +51,13 @@ const {cart, clearCart, total } = useContext(CartContext);
         <Link 
           to='/'
           className='bg-blue-200 flex p-4 justify-center
-          items-center text-primary w-full font-medium'
+          items-center text-blue-800 w-full font-medium'
           >Ver sacola</Link>
         <Link 
           to='/'
-          className='bg-primary flex p-4 justify-center
+          className='bg-blue-800 flex p-4 justify-center
           items-center text-white w-full font-medium'
-        >Confirir</Link>
+        >Conferir</Link>
         </div>
        </div>
   );

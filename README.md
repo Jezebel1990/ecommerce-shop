@@ -1,8 +1,13 @@
 # 🛍️ Fashion Shop 👚
 
-Welcome, this project is an ecommerce for a clothing store using the publica API [https://fakestoreapi.com] (https://fakestoreapi.com).
+Welcome, this project is a responsive ecommerce website for a clothing store using public API [https://fakestoreapi.com](https://fakestoreapi.com).
 
 ##  👀 Preview
+![Captura de tela 2023-06-03 004259](https://github.com/Jezebel1990/ecommerce-shop/assets/75287031/bfc6653f-eaaf-441e-8312-ef37915e7da6)
+![Captura de tela 2023-06-03 004821](https://github.com/Jezebel1990/ecommerce-shop/assets/75287031/1300ea22-081b-4916-b823-b04c32711d2e)
+![Captura de tela 2023-06-03 004420](https://github.com/Jezebel1990/ecommerce-shop/assets/75287031/44e868fd-3eaf-4e55-a7de-c51f10ba5203)
+![Captura de tela 2023-06-03 004625](https://github.com/Jezebel1990/ecommerce-shop/assets/75287031/e5d92fc7-cf36-4336-bd0a-ad7c735b4922)
+![Captura de tela 2023-06-03 004529](https://github.com/Jezebel1990/ecommerce-shop/assets/75287031/13f86cb2-1777-4549-a56e-a50fc5bb8ea2)
 
 
 ## ⚙️ Technologies
